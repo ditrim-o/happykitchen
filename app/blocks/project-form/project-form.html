@@ -1,0 +1,57 @@
+<section class="project-form">
+    <div class="container project-form__container">
+        <h3 class="project-form__hedaer">Уже есть дизайн-проект?</h3>
+        <p class="project-form__text">Пришлите его нам и мы предложим цену ниже</p>
+        <div class="project-form__content">
+            <ul class="project-form__list">
+                <li class="project-form__list-item">
+                    <p class="project-form__num">0 ₽</p>
+                    <p class="project-form__value">стоимость<br> расчёта проекта</p>
+                </li>
+                <li class="project-form__list-item">
+                    <p class="project-form__num">3 </p>
+                    <p class="project-form__value">варианта расчёта<br> предложат менеджеры</p>
+                </li>
+            </ul>
+            <form class="project-form__form">
+                <div class="project-form__row">
+                    <div class="project-form__field field">
+                        <label for="" class="project-form__label input-label">Имя</label>
+                        <input type="text" class="project-form__input input error" placeholder="Анатолий Игнатьевич"
+                            name="name">
+                        <span class="error-text">Заполните это поле!</span>
+                    </div>
+                    <div class="project-form__field  field">
+                        <label for="" class="project-form__label input-label">Телефон</label>
+                        <input type="tel" class="project-form__input  input" placeholder="+7 (999) 999 99 99"
+                            name="phone">
+                    </div>
+                </div>
+                <div class="project-form__field  field">
+                    <label for="" class="project-form__label input-label">Комментарий</label>
+                    <textarea name="text" class="project-form__textarea textarea"
+                        placeholder="Укажите примерную длину гарнитура по стенам. Например, кухня прямая 3,5 м или кухня угловая 1,5 м+1,8 м"
+                        name="text"></textarea>
+                </div>
+                <div class="project-form__bottom">
+                    <div class="project-form__file-attach">
+                        <svg class="project-form__file-icon">
+                            <use xlink:href="./img/sprite/sprite.svg#file-pr"></use>
+                        </svg>
+                        <div class="project-form__file-content">
+                            <span class="project-form__file-text">Вы можете </span>
+                            <label for="project-form__file" class="project-form__file-label"> приложить эскиз или
+                                фото</label>
+                            <input type="file" name="" class="project-form__file" id="project-form__file">
+                        </div>
+                    </div>
+                    <button class="project-form__btn btn btn_yellow">Отправить</button>
+                </div>
+                <div class="project-form__policy">
+                    <p class="project-form__policy-text">Нажимая кнопку “Отправить”, вы соглашаетесь с условиями <a
+                            href="#" class="project-form__policy-link">Политики конфиденциальности</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

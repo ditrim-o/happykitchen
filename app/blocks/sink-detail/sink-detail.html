@@ -1,0 +1,69 @@
+<section class="sink-detail">
+    <div class="container sink-detail__container">
+        <ul class="breadcrumbs sink-detail__breadcrumbs">
+            <li class="breadcrumbs-item">
+                <a href="#" class="breadcrumbs__link">Главная //</a>
+            </li>
+            <li class="breadcrumbs-item">
+                <a href="#" class="breadcrumbs__link">Категория //</a>
+            </li>
+            <li class="breadcrumbs-item">
+                <a href="#" class="breadcrumbs__link">Подкатегория</a>
+            </li>
+        </ul>
+        <div class="sink-detail__content">
+            <div class="sink-detail__info">
+                <h1 class="sink-detail__title">Мойка SD-45</h1>
+                <p class="sink-detail__price">5 990 ₽</p>
+                <p class="sink-detail__text">Лаконичная мойка имеет текстуру натурального камня, но в несколько раз
+                    прочнее. Чаша легко чистится и устойчива даже к самым абразивным веществам. В модельно ряде
+                    представлена в нескольких цветах.</p>
+                <button class="sink-detail__btn btn btn_yellow">Купить</button>
+                <p class="sink-detail__spec-header">Характеристики</p>
+                <ul class="sink-detail__spec-list">
+                    <li class="sink-detail__spec-item">
+                        <p class="sink-detail__spec-title">Габариты, мм</p>
+                        <p class="sink-detail__spec-data">510x510 </p>
+                    </li>
+                    <li class="sink-detail__spec-item">
+                        <p class="sink-detail__spec-title">Размер чаши, мм</p>
+                        <p class="sink-detail__spec-data">374x361x191</p>
+                    </li>
+                    <li class="sink-detail__spec-item">
+                        <p class="sink-detail__spec-title">Установочный проём, мм</p>
+                        <p class="sink-detail__spec-data">480x480</p>
+                    </li>
+                    <li class="sink-detail__spec-item">
+                        <p class="sink-detail__spec-title">Комплектация</p>
+                        <p class="sink-detail__spec-data">Сливная арматура, герметик</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="sink-detail__img">
+                <img src="./img/detail-sink.jpg" alt="" class="sink-detail__pic">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="another-sinks">
+    <div class="container another-sinks__container">
+        <h2 class="another-sinks__header">Другие модели</h2>
+        <ul class="another-sinks__list sinks__list">
+            @@include("../sinks/sink.html",{
+            img:'./img/sink1.png',
+            title:'Мойка SD-45',
+            price: '4 990 ₽'
+            })
+            @@include("../sinks/sink.html",{
+            img:'./img/sink2.png',
+            title:'Мойка SD-45',
+            price: '4 990 ₽'
+            })
+            @@include("../sinks/sink.html",{
+            img:'./img/sink3.png',
+            title:'Мойка SD-45',
+            price: '4 990 ₽'
+            })
+        </ul>
+    </div>
+</section>

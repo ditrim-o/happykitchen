@@ -1,0 +1,21 @@
+.production{
+    &__breadcrumbs{
+        padding-top: 23px;
+    }
+    &__container{
+        position: relative;
+    }
+    &__wrapper{
+        max-width: 100vw;
+        overflow: hidden;
+    }
+    
+}
+@media (max-width: 1440px){
+    .production {
+        &__container{
+            width: 1300px;
+        }
+        
+    }
+}

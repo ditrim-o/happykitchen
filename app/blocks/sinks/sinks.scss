@@ -1,0 +1,112 @@
+.sinks{
+    &__list{
+        padding-top: 54px;
+        border-top: 1px solid #E5E5E5;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 82px;
+        margin-bottom: 130px;
+    }
+    &__item{
+        text-align: center;
+    }
+    &__item:nth-child(2), &__item:nth-child(5), &__item:nth-child(8), &__item:nth-child(11){
+        border-left: 1px solid #E5E5E5;
+        border-right: 1px solid #E5E5E5;
+    }
+    &__img{
+        height: 295px;
+        width: 322px;
+        display: block;
+        object-fit: contain;
+        margin: 0 auto 20px;
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 31px;
+        line-height: 38px;
+        color: #2E3831;
+        margin-bottom: 13px;
+    }
+    &__price{
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 35px;
+        color: #2E3831;
+    }
+    &__pagination{
+        margin-bottom: 90px;
+    }
+
+}
+@media(max-width:1440px){
+    .sinks{
+        &__list{
+            margin-bottom: 90px;
+            padding-top: 37px;
+            row-gap: 84px;
+        }
+    }
+}
+@media(max-width:1100px){
+    .sinks{
+        &__item{
+            padding: 0 20px;
+        }
+        &__img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+@media(max-width:960px){
+    .sinks{
+        &__list{
+        margin-bottom: 36px; 
+        row-gap: 33px;
+        }
+        &__pagination{
+            margin-bottom: 52px;
+        }
+        &__title{
+            font-size: 26px;
+            margin-bottom: 0px;
+        }
+        &__img{
+            margin-bottom: 10px;
+        }
+    }
+}
+@media(max-width:768px){
+    .sinks{
+        &__list{
+            grid-template-columns: 1fr 1fr;
+        }
+        &__item:nth-child(2), &__item:nth-child(5), &__item:nth-child(8), &__item:nth-child(11){
+            border-left: transparent;
+            border-right: transparent;
+        }
+        &__item:nth-child(odd){
+            border-right: 1px solid #E5E5E5;
+        }
+        &__filter{
+            padding-left: 0px!important;
+            padding-right: 0px!important;
+        }
+    }
+}
+
+@media(max-width:400px){
+    .sinks{
+        // &__list{
+        // grid-template-columns: 1fr;
+        // }
+        // &__item:nth-child(odd){
+        //     border-right: transparent;
+        // }
+        &__title{
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.catalog-top__wrapper.banner-img{
+    background: none;
+}
+.banner-img{
+    &__left{
+        position: relative;
+        height: 426px;
+    }
+    &__pic{
+        position: absolute;
+        right: 0px;
+        width: calc(50vw + 250px);
+        height: 100%;
+        object-fit: cover;
+    }
+}
+@media(max-width:930px){
+    .banner-img{
+        &__pic{
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+            width: 100vw;
+        }
+        &__left{
+            height: 300px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@@include("../blocks/header/header.html")
+<main class="main">
+    @@include("../blocks/closet-intro/closet-intro.html")
+    @@include("../blocks/filter/filter.html",{
+    name_1: 'Встроенные',
+    name_2: 'Корпусные',
+    name_3: 'Распашные'
+    })
+    @@include("../blocks/closet-catalog/closet-catalog.html")
+    @@include("../blocks/pagination/pagination.html")
+    @@include("../blocks/closets-advantages/closets-advantages.html")
+    @@include("../blocks/kitchen-detail/horizontal-scroll.html")
+    @@include("../blocks/project-form/project-form.html")
+</main>
+@@include("../blocks/footer/footer.html")

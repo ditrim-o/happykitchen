@@ -1,0 +1,116 @@
+.advantages-dot {
+
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #e6e6e6cc;
+    animation: pulse 3s infinite ease-in-out;
+
+    &::after {
+        content: "";
+        left: 50%;
+        top: 50%;
+        transform: translate(-53%, -52%);
+        position: absolute;
+        background-color: #0498CE;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+
+    }
+
+    &__content {
+        cursor: auto;
+        padding: 43px 53px;
+        position: relative;
+        background-color: #fff;
+        position: absolute;
+        right: 64px;
+        top: -14px;
+        min-width: 470px;
+        z-index: 5;
+        box-shadow: 0px 24px 54px rgba(0, 0, 0, 0.25);
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translate(10px, 10px);
+        transition: .3s;
+
+        &._active {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0, 0);
+            pointer-events: auto;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 24px;
+            right: -40px;
+            border: 40px solid transparent;
+            border-top: 40px solid #FFF;
+            border-left: 40px solid #FFF;
+        }
+        &._reverse {
+            left: 64px;
+            &::after {
+                display: none;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 24px;
+                left: -40px;
+                border: 40px solid transparent;
+                border-top: 40px solid #FFF;
+                border-right: 40px solid #FFF;
+            }
+        }
+    }
+    &__close {
+        background-color: transparent;
+        padding: 10px;
+        border: none;
+        margin: 0;
+        position: absolute;
+        top: 19px;
+        right: 3%;
+        transition: opacity .3s;
+        cursor: pointer;
+        pointer-events: auto;
+        z-index: 10;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &__close-icon {
+        width: 12px;
+        height: 12px;
+        pointer-events: none;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        margin-bottom: 17px;
+    }
+    &__text {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #8E8E8E;
+    }
+
+}
+@media (max-width: 1570px) {
+    .advantages-dot {
+        &__content {
+            padding: 43px 53px;
+            min-width: 370px;
+        }
+    }
+    
+}

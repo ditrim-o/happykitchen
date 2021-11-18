@@ -1,0 +1,17 @@
+@@include("../blocks/header/header.html")
+<main class="main">
+    @@include("../blocks/kitchen-catalog/catalog-banner.html",{
+        title:'Угловые кухни',
+        text: 'Одна из самых практичных и вариативных планировок для вашей кухни.'
+        })
+    @@include("../blocks/filter/filter.html",{
+        name_1: 'Угловые',
+        name_2: 'Прямые',
+        name_3: 'Маленькие'
+        })
+    @@include("../blocks/kitchen-catalog/catalog.html")
+    @@include("../blocks/project-form/project-form.html")
+    @@include("../blocks/video-reviews/video-reviews.html")
+    @@include("../blocks/advantages/advantages.html")
+</main>
+@@include("../blocks/footer/footer.html")

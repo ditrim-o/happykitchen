@@ -1,0 +1,44 @@
+.card-discription {
+    &__title {
+        font-size: 12px;
+        line-height: 28px;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 31.5px;
+        line-height: 38px;
+    }
+    &__price-block {
+        display: flex;
+        gap: 27px;
+        white-space: nowrap;
+    }
+    &__price-current {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    &__price-old {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        text-decoration-line: line-through;
+        color: #8E8E8E;
+        white-space: nowrap;
+    }
+    &__button{
+        padding: 14px 34px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        border: 2px solid #FECF28;
+        margin-top: 13px;
+        background-color: transparent;
+        white-space: nowrap;
+        width: 100%;
+    }
+}

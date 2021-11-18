@@ -1,0 +1,349 @@
+.catalog-top{
+    padding-top: 12px;
+    max-width: 100%;
+    overflow: hidden;
+   
+    &__container{
+        display: grid;
+        grid-template-columns: 950px 1fr;
+        column-gap: 80px;
+    }
+    &__wrapper{
+        background: linear-gradient(90deg, #FECF28 40%, white 40%);
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        padding-top: 28px;
+
+    }
+    &__hedaer{
+        font-size: 70px;
+        font-weight: 500;
+        line-height: 55px;
+        margin-bottom: 40px;
+        color:#2E3831;
+    }
+    &__description{
+        color:#2E3831;
+        font-size: 16px;
+        line-height: 28px;  
+        max-width: 430px;
+    }
+    &__list{
+        margin-top: auto;
+        display: flex;
+        max-width: 490px;
+        justify-content: space-between;
+        &_space {
+            margin-top: 23px;
+        }
+    }
+    &__list-item{
+        max-width: 106px;
+    }
+    &__num{
+        font-weight: 300;
+        font-size: 58px;
+        line-height: 70px;
+        color: #2E3831;
+    }
+    &__text{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color: #2E3831;
+    }
+    &__num-text{
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 34px;
+        color: #2E3831;
+    }
+}
+.breadcrumbs{
+    display: flex;
+    &__link{
+        font-size: 11px;
+        line-height: 24px;
+        color: #C4C4C4;
+    }
+}
+.kitchen-banner{
+    position: relative;
+    overflow: hidden;
+    padding-top: 65px;
+    padding-right: 82px;
+    padding-bottom: 102px;
+    background-color: #FECF28;
+    &:after{
+        content:"%";
+        font-size: 588px;
+        font-weight: 900;
+        position: absolute;
+        -webkit-text-stroke:3px rgba(255, 255, 255, 0.31);
+        text-stroke: 3px rgba(255, 255, 255, 0.31);
+        color: transparent;
+        top: -79px;
+        line-height: 473px;
+        right: -87px;
+    }
+    &__wrapper{
+
+
+    }
+    &__top{
+        font-size: 42px;
+        font-weight: 900;
+        color:white;
+        z-index: 1;
+        align-self: flex-start;
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__text{
+        font-size: 107px;
+        line-height: 71px;
+        font-weight: 900;
+        font-style: italic;
+        z-index: 1;
+    }
+    &__discount{
+        font-style: italic;
+        font-size: 260px;
+        color:white;
+        line-height: 60px;
+        font-weight: 900;
+        margin-left: -75px;
+        z-index: 1;
+        letter-spacing: -0.15em;
+    }
+    &__prize{
+        font-size: 34px;
+        font-weight: 900;
+        right: 82px;
+        bottom: 70px;
+        z-index: 3;
+        position: absolute;
+        line-height: 26px;
+        
+    }
+    &__prize_blue{
+        position: relative;
+        color:white;
+        &:after{
+            content:"";
+            background-color: #0498CE;
+            width: 204px;
+            height: 47px;
+            transform: rotate(-3deg);
+            left: -15px;
+            top: 0px;
+            position: absolute;
+            z-index: -1;
+        }
+    }
+    
+}
+// .closet-banner {
+//     &__image {
+//         width: 100%;
+//         height: 100%;
+//         position: relative;
+//         left: 100%;
+//         width: 0;
+//         overflow: visible;
+//         img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//         }
+//     }
+// }
+@media(max-width:1440px){
+    .catalog-top{
+        &__container{
+            width: 1250px;
+            grid-template-columns: 805px 1fr;
+            column-gap: 60px;
+        }
+    }
+    .kitchen-banner{
+        padding-top: 71px;
+        padding-bottom: 106px;
+        padding-right: 20px;
+        &__top{
+            font-size: 32px;
+        }
+        &__text{
+            font-size: 97px;
+        }
+        &__discount{
+        font-weight: 800;
+        font-size: 230px;
+        margin-left: -62px;}
+        &__prize{
+            right: 95px;
+        }
+    }
+
+}
+@media(max-width:1280px){
+    .catalog-top{
+        &__container{
+            grid-template-columns: 542px 1fr;
+            column-gap: 30px;
+        }
+    }
+    .kitchen-banner{
+        padding-top: 51px;
+        padding-bottom: 122px;
+
+        &__text{
+            font-size: 55px;
+            line-height: 43px;
+        }
+        &__discount{
+        font-size: 163px;
+        margin-left: -26px;
+        }
+       
+        &__prize{
+            right: auto;
+            bottom: 33px;
+        }
+    }
+
+
+}
+
+@media(max-width:960px){
+    .catalog-top{
+        padding-top: 0px;
+        &__container{
+            column-gap: 20px;
+        }
+        &__hedaer{
+            font-size:42px;
+            margin-bottom: 19px;
+        }
+    }
+    .kitchen-banner{
+    
+        &:after{
+            font-size: 498px;
+        }
+    }
+ 
+}
+@media(max-width:930px){
+    .catalog-top{
+        &__wrapper{
+            background-image: none;
+        }
+        &__container{
+            grid-template-columns: 1fr;
+            width: 523px;
+            max-width: 100%;
+        }
+        &__hedaer{
+            margin-bottom: 9px;
+        }
+        &__info{
+            padding-bottom: 50px;
+        }
+        &__description{
+            margin-bottom: 30px;
+        }
+    }
+    .kitchen-banner{
+        overflow: visible;
+        padding-top: 21px;
+        padding-bottom: 130px;
+        padding-right: 0px;
+        &:after{
+            content: "";
+            width: calc(100vw + 100px);
+            background-color: #FECF28;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            height: 100%;
+            transform: translate(-50%, 0);
+            z-index: -1;
+        }
+        &__wrapper{
+
+        }
+    }
+    .breadcrumbs{
+        display: none;
+    }
+ 
+}
+@media(max-width:768px){
+    .catalog-top{
+  
+        &__container{
+        }
+        &__info{
+            width: 100%;
+            max-width: 414px;
+            margin: 0 auto;
+        }
+      
+    }
+    .kitchen-banner{
+        width: 100%;
+        max-width: 414px;
+        padding-bottom: 114px;
+        margin: 0 auto;
+        &__text{
+            font-size: 50px;
+        }
+        &__discount{
+            font-size: 113px;
+            line-height: 96px;
+            margin-left: -47px;
+        }
+        &__row{
+            align-items: flex-end;
+        }
+        &__prize{
+            font-size: 24px;
+            line-height: 26px;
+        }
+        &__prize_blue:after{
+            width: 154px;
+            height: 36px;
+        }
+    }
+        
+}
+@media(max-width:414px){
+    .catalog-top{
+        &__num{
+            font-size: 39px;
+            line-height: 39px;
+        }
+        &__text{
+            font-size: 13px;
+        }
+        &__hedaer{
+            line-height: 40px;
+        }
+    }
+    .kitchen-banner{
+        &__text{
+            font-size: 39px;
+        }
+        &__discount{
+            font-size: 74px;
+            line-height: 53px;
+            margin-left: -30px;
+        }
+    }
+}

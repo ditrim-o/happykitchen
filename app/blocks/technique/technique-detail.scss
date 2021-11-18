@@ -1,0 +1,205 @@
+.technique-detail{
+    margin-bottom: 80px;
+    &__container{
+        padding-top: 45px;
+    }
+    &__breadcrumbs{
+        margin-bottom: 8px;
+    }
+    &__content{
+        display: grid;
+        grid-template-columns: auto minmax(200px, 700px);
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 70.875px;
+        line-height: 56px;
+        color: #2E3831;
+        margin-bottom: 46px;
+    }
+    &__price{
+        font-weight: 500;
+        font-size: 47px;
+        line-height: 57px;
+        color: #2E3831;
+        margin-bottom: 27px;
+    }
+
+    &__btn{
+        width: 200px;
+        height: 60px;
+        margin-bottom: 54px;
+    }
+    &__spec-header{
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 35px;
+        color: #2E3831;
+        margin-bottom: 20px;
+    }
+    &__spec-list{
+        width: 317px;
+    }
+    &__spec-item{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__spec-title{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 28px;
+        color: #8E8E8E;
+    }
+    &__spec-data{
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 28px;
+      
+        color: #8E8E8E;
+    }
+    &__img{
+        margin-top: -70px;
+    }
+    &__pic{
+        object-fit: contain;
+        width: 100%;
+    }
+}
+.another-technique{
+    &__header{
+        font-weight: 500;
+        font-size: 47.25px;
+        line-height: 57px;
+        color: #2E3831;
+        margin-bottom: 70px;
+    }
+    &__list{
+        border-top: none;
+        padding-top: 10px;
+        margin-bottom: 130px;
+    }
+}
+@media(max-width:1440px){
+    .technique-detail{
+        margin-bottom: 50px;
+        &__container{
+            width: 1300px;
+        }
+        &__content{
+            grid-template-columns: auto minmax(200px, 560px);
+            column-gap: 20px;
+        }
+
+        &__btn{
+            margin-bottom: 44px;
+        }
+        &__title{
+            margin-bottom: 6px;
+        }
+        &__img{
+            margin-top: 0px;
+        }
+        &__btn{
+            margin-bottom: 44px;
+        }
+    }
+    .another-technique{
+        &__container{
+            width: 1300px;
+        }
+        &__header{
+            margin-bottom: 56px;
+        }
+        &__list{
+            margin-bottom: 120px;
+        }
+    }
+}
+@media(max-width:960px){
+    .technique-detail{
+        margin-bottom: 67px;
+        &__breadcrumbs{
+            margin-bottom: 0px;
+        }
+        &__info{
+            padding-top: 28px;
+        }
+        &__title{
+            font-size: 42px;
+            margin-bottom: 11px;
+            line-height: 42px;
+        }
+        &__price{
+            font-size: 32px;
+            margin-bottom: 22px;
+            line-height: 32px;
+        }
+        &__content{
+            grid-template-columns: auto minmax(300px, 414px);
+            column-gap: 10px;
+        }
+        &__btn{
+            margin-bottom: 34px;
+        }
+    }
+    .another-technique{
+        &__header{
+            font-size: 32px;
+            margin-bottom: 33px;
+        }
+        &__list{
+            margin-bottom: 50px;
+        }
+    }
+}
+@media(max-width:768px){
+    .technique-detail{
+        margin-bottom: 53px;
+        &__content{
+            grid-template-columns: 1fr;
+        }
+        &__img{
+            grid-row: 1/2;
+        }
+        &__info{
+            grid-row: 2/3;
+        }
+        &__container{
+            padding-top: 0px;
+            width: 420px;
+        }
+        &__btn{
+            width: 100%;
+            margin-bottom: 18px;
+        }
+        &__spec-list{
+            width: 100%;
+        }
+        &__price{
+            margin-bottom: 20px;
+        }
+    }
+    .another-technique{
+        &__container{
+            width: 420px;
+        }
+        &__list{
+            margin-bottom: 89px;
+        }
+        &__list .technique__item:last-child{
+            display:none;
+        }
+    }
+}
+
+@media(max-width:400px){
+    .technique-detail{
+        &__title{
+            font-size: 33px;
+        }
+        &__spec-title, &__spec-data{
+            font-size: 11px;
+        }
+    }
+}

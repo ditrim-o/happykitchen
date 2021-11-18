@@ -1,0 +1,81 @@
+.workflow-step3{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/step3-bg.png);
+    padding-top: 218px;
+    padding-bottom: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__title{
+        font-weight: 500;
+        font-size: 31.5px;
+        line-height: 38px;
+        color: #FFFFFF;
+        margin-top: 10px;
+        margin-bottom: 31px;
+        max-width: 800px;
+        width: 100%;
+    }
+    &__text{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 30px;
+        color: #FFFFFF;
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 73px;
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 315px));
+        column-gap: 40px;
+    }
+    &__num{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 30px;
+        color: #FECF28;
+        margin-bottom: 30px;
+        display: block;
+    }
+    &__item-text{
+        font-size: 15px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    @media(max-width:1440px){
+        padding-top: 138px;
+        &__container{
+            width: 1110px;
+        }
+    }
+    @media(max-width:960px){
+        padding-top: 58px;
+        padding-bottom: 94px;
+        &__list{
+            grid-template-columns:minmax(100px, 515px);
+            row-gap: 33px; 
+            padding-left: 65px;
+        }
+        &__item{
+            display: grid;
+            grid-template-columns: 55px auto;
+        }
+        &__title{
+            font-size: 26px;
+            line-height: 31px;
+            margin-bottom: 15px;
+        }
+        &__text{
+            margin-bottom: 50px;
+        }
+    }
+    @media(max-width:500px){
+        padding-bottom: 79px;
+        &__list{
+            padding-left: 0px;
+            row-gap: 29px;
+        }
+        &__text{
+            margin-bottom: 25px;
+        }
+    }
+}

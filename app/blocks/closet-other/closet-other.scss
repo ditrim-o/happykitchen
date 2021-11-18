@@ -1,0 +1,108 @@
+.closet-other {
+    margin-top: 136px;
+    margin-bottom: 110px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 55px;
+  // .closet-other__title
+
+  &__title {
+    font-weight: 500;
+    font-size: 47.25px;
+    line-height: 57px;
+  }
+
+  // .closet-other__button
+
+  &__button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-self: end;
+    color: #0498ce;
+    fill: #0498ce;
+  }
+
+  // .closet-other__button-text
+
+  &__button-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: inherit;
+  }
+
+  // .closet-other__button-text
+  &__button-icon {
+      width: 17px;
+      height: 11px;
+      margin-left: 24px;
+      fill: inherit;
+  }
+  // .closet-other__container
+
+  &__container {
+    grid-column: 1/ span 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 46px;
+  }
+}
+@media(max-width:1440px){
+
+}
+@media(max-width:1280px){
+    .closet-other{
+        &__card{
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media(max-width:960px){
+    .closet-other{
+        margin-top: 70px;
+        margin-bottom: 70px;
+        &__title {
+            font-size: 32px;
+            line-height: 42px;
+        }
+        &__card{
+            &:nth-last-child(2) {
+                display: none;
+            }
+        }
+    }
+}
+@media(max-width:930px){
+
+}
+@media(max-width:670px){
+    .closet-other{
+        &__container {
+            flex-direction: column;
+        }
+        &__title {
+            grid-column: 1/ span 2;
+        }
+        &__button {
+            order: 3;
+            width: 100%;
+            justify-content: space-around;
+            background-color: #0498CE;
+            color: #fff;
+            fill: #fff;
+            padding: 22px 10px;
+            grid-column: 1/ span 2;
+        }
+    }
+}
+@media(max-width:414px){
+
+}

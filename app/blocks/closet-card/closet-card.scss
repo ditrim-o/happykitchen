@@ -1,0 +1,61 @@
+.closet-card {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        &_big {
+            margin-top: 0;
+        }
+    }
+    &__discription {
+        margin-right: 15px;
+    }
+    &__image-container {
+        position: relative;
+    }
+}
+@media(max-width:1440px){
+
+}
+@media(max-width:960px){
+    .closet-card {
+        &__footer {
+            &_big {
+                margin-top: 0;
+                flex-direction: column;
+            }
+        }
+        &__specifications {
+            margin-top: 18px;
+        }
+    }
+}
+@media(max-width:760px){
+    .closet-card {
+        &__specifications {
+            display: none;
+        }
+    }
+}
+
+@media(max-width:670px){
+    .closet-card {
+        &__footer {
+            padding: 0 20px;
+            &_big {
+                margin-top: 0;
+                flex-direction: column;
+            }
+        }
+        &__specifications {
+            margin-top: 18px;
+        }
+        &__discription {
+            width: 100%;
+            margin-right: 0;
+        }
+        
+    }
+}

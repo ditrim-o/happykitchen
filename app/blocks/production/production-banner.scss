@@ -1,0 +1,107 @@
+.production-banner{
+    background:linear-gradient(90deg, rgba(255, 255, 255, 0.87) 0%, rgba(255, 255, 255, 0.5133) 98.71%), url(../img/materials-header.png);
+    background-position: left 300px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__more{
+        transform: rotate(-90deg) translateY(-100%);
+        height: 15px;
+        display: block;
+        position: absolute;
+        left: -20px;
+        top:623px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #0498CE;
+        &:before{
+            content:"";
+            height: 1px;
+            width: 150px;
+            background-color:  #E5E5E5;
+            right: calc(100% + 34px);
+            position: absolute;
+            top:50%;
+        }
+        &::after{
+            content:"";
+            height: 1px;
+            width: 50px;
+            background-color:  #C4C4C4;
+            right: calc(100% + 34px);
+            position: absolute;
+            top:50%;
+        }
+    }
+    &__content{
+        padding-top: 246px;
+        padding-bottom: 96px;
+        padding-left: 245px;
+    }
+    &__header{
+        font-weight: 500;
+        font-size: 70.875px;
+        line-height: 56px;
+        color: #2E3831;
+        max-width: 611px;
+        margin-bottom: 107px;
+    }
+    &__text{
+        font-size: 15px;
+        line-height: 29px;
+        color: #2E3831;
+        max-width: 670px;
+    }
+
+}
+@media(max-width:1440px){
+    .production-banner{
+        background-position: left 330px center;
+        &__header{
+            margin-bottom: 47px;
+            max-width: 611px;
+        }
+        &__content{
+            padding-top: 94px;
+            padding-bottom: 70px;
+            padding-left: 75px;
+        }
+        
+        &__more{
+            top: 480px;
+        }
+    }
+
+}
+@media(max-width:960px){
+    .production-banner{
+        background-position: center;
+        &__header{
+            margin-bottom: 38px;
+            font-size: 42px;
+            line-height: 40px;
+        }
+        &__content{
+            padding-top: 104px;
+            padding-bottom: 90px;
+            padding-left: 0;
+        }
+        
+        &__more{
+           display: none;
+        }
+    }
+}
+@media(max-width:414px){
+    .production-banner{
+        &__header{
+            margin-bottom: 38px;
+        }
+        &__content{
+            padding-top: 76px;
+            padding-bottom: 60px;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+<section class="technique-detail">
+    <div class="container technique-detail__container">
+        <ul class="breadcrumbs technique-detail__breadcrumbs">
+            <li class="breadcrumbs-item">
+                <a href="#" class="breadcrumbs__link">Главная //</a>
+            </li>
+            <li class="breadcrumbs-item">
+                <a href="#" class="breadcrumbs__link">Категория //</a>
+            </li>
+            <li class="breadcrumbs-item">
+                <a href="#" class="breadcrumbs__link">Подкатегория</a>
+            </li>
+        </ul>
+        <div class="technique-detail__content">
+            <div class="technique-detail__info">
+                <h1 class="technique-detail__title">CANDY CLG 64 PX</h1>
+                <p class="technique-detail__price">15 990 ₽</p>
+                <button class="technique-detail__btn btn btn_yellow">Купить</button>
+                <p class="technique-detail__spec-header">Характеристики</p>
+                <ul class="technique-detail__spec-list">
+                    <li class="technique-detail__spec-item">
+                        <p class="technique-detail__spec-title">Тип </p>
+                        <p class="technique-detail__spec-data">Электрическая</p>
+                    </li>
+                    <li class="technique-detail__spec-item">
+                        <p class="technique-detail__spec-title">Материал</p>
+                        <p class="technique-detail__spec-data">Стеклокерамика </p>
+                    </li>
+                    <li class="technique-detail__spec-item">
+                        <p class="technique-detail__spec-title">Размер встраивания</p>
+                        <p class="technique-detail__spec-data">60 см</p>
+                    </li>
+                    <li class="technique-detail__spec-item">
+                        <p class="technique-detail__spec-title">Количество конфорок</p>
+                        <p class="technique-detail__spec-data">4</p>
+                    </li>
+                    <li class="technique-detail__spec-item">
+                        <p class="technique-detail__spec-title">Управление</p>
+                        <p class="technique-detail__spec-data">Сенсорное</p>
+                    </li>
+                    <li class="technique-detail__spec-item">
+                        <p class="technique-detail__spec-title">Замок от детей</p>
+                        <p class="technique-detail__spec-data">Есть</p>
+                    </li>
+                    <li class="technique-detail__spec-item">
+                        <p class="technique-detail__spec-title">Индикатор остаточного тепла</p>
+                        <p class="technique-detail__spec-data">Есть</p>
+                    </li>
+                    <li class="technique-detail__spec-item">
+                        <p class="technique-detail__spec-title">Мощность</p>
+                        <p class="technique-detail__spec-data">6,5 кВт</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="technique-detail__img">
+                <img src="./img/tech-detail.jpg" alt="" class="technique-detail__pic">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="another-technique">
+    <div class="container another-technique__container">
+        <h2 class="another-technique__header">Другие модели</h2>
+        <ul class="another-technique__list technique__list">
+            @@include("../technique/technique-single.html",{
+            img:'./img/tech1.jpg',
+            title:'Maunfeld - EVCE.292-BK',
+            price: '4 990 ₽'
+            })
+            @@include("../technique/technique-single.html",{
+            img:'./img/tech2.jpg',
+            title:'MIDEA MIH64516F',
+            price: '4 990 ₽'
+            })
+            @@include("../technique/technique-single.html",{
+            img:'./img/tech3.jpg',
+            title:'Maunfeld - EGHE.43.33CB G',
+            price: '4 990 ₽'
+            })
+        </ul>
+    </div>
+</section>

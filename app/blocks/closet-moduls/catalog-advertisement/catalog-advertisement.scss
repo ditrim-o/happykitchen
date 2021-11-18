@@ -1,0 +1,48 @@
+.catalog-advertisement{
+    position: relative;
+    max-width:  360px;
+    &__intro {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #8E8E8E;
+        margin-bottom: 25px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 39px;
+        display: flex;
+        align-items: flex-end;
+        z-index: 2;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        z-index: 2;
+    }
+    &__icon {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+        fill: transparent;
+        stroke: #0498CE;
+        stroke-width: 5px;
+    }
+}
+@media(max-width:1440px){
+
+}
+@media(max-width:960px){
+
+}
+@media(max-width:930px){
+
+}
+@media(max-width:414px){
+
+}

@@ -1,0 +1,15 @@
+.workflow {
+  &__container{
+    position: relative;
+  }
+  &__breadcrumbs{
+    padding-top: 23px;
+}
+}
+@media(max-width:1440px){
+  .workflow{
+    &__container{
+      width: 1300px;
+    }
+  }
+}

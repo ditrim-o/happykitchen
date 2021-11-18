@@ -1,0 +1,137 @@
+@import "../closet-advantages-moduls/advantages-dot/advantages-dot.scss";
+@import "../closet-advantages-moduls/advantages-terms/advantages-terms.scss";
+@import "../closet-advantages-moduls/advantages-slider/advantages-slider.scss"; 
+
+.closets-advantages {
+  max-width: 2200px;
+  margin: 66px auto;
+  display: block;
+  &.container {
+    padding: 0;
+  }
+  &__container {
+    background-image: url(../img/closets/advantages_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 710px;
+  }
+  &__dots {
+    max-width: 450px;
+    margin: 0 auto;
+    transform: translateX(-10%);
+    position: relative;
+  }
+  &__dot {
+    &._dot-1 {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+    }
+    &._dot-2 {
+      position: absolute;
+      top: 333px;
+      right: 0;
+    }
+    &._dot-3 {
+      position: absolute;
+      top: 400px;
+      left: 16%;
+    }
+    &._dot-4 {
+      position: absolute;
+      top: 500px;
+      right: 30%;
+    }
+    &._dot-5 {
+      position: absolute;
+      top: 600px;
+      left: 0;
+    }
+  }
+}
+
+
+
+@media (min-width: 1800px) {
+  .closets-advantages {
+    &__dots {
+      max-width: 24%;
+    }
+  }
+}
+@media (max-width: 1390px) {
+  .closets-advantages {
+    &__dot {
+      &._dot-5 {
+        & > .advantages-dot__content {
+          left: 64px;
+          &::after {
+            display: none;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 24px;
+            left: -40px;
+            border: 40px solid transparent;
+            border-top: 40px solid #fff;
+            border-right: 40px solid #fff;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .closets-advantages {
+    &__dot {
+      &._dot-2 {
+        & > .advantages-dot__content {
+          left: unset;
+          &::after {
+            display: block;
+          }
+          &::before {
+            display: none;
+          }
+        }
+      }
+      &._dot-3 {
+        & > .advantages-dot__content {
+          left: 64px;
+          &::after {
+            display: none;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 24px;
+            left: -40px;
+            border: 40px solid transparent;
+            border-top: 40px solid #fff;
+            border-right: 40px solid #fff;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 960px) {
+  .closets-advantages {
+    display: none;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px #fff;
+  }
+
+  80% {
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.3);
+  }
+
+  100% {
+    box-shadow: 0 0 0 7px rgba(0, 0, 0, 0);
+  }
+}

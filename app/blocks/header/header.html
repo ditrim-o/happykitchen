@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Kitchen</title>
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/libs.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script src="./js/artem.js"></script>
+    <script src="./js/ilya.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/libs.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <section class="header fixed">
+        <div class="header__container container">
+            <div class="header__top">
+                <div class="header__burger-wrapper">
+                    <div class="header__burger">
+                        <span class="header__burger-line"></span>
+                        <span class="header__burger-line"></span>
+                        <span class="header__burger-line"></span>
+                    </div>
+                </div>
+                <div class="header__city-desc">
+                    <div class="header__city-desc-wrapper">
+                        <span class="select__current header__city-desc-current">
+                            <svg class="header__city-icon">
+                                <use xlink:href="./img/sprite/sprite.svg#plane"></use>
+                            </svg>
+                            <span class="select__current-text header__city-text">Санкт-Петербург</span>
+                        </span>
+                        <div class="header__city-desc-popup">
+                            <p class="header__city-desc-title">
+                                Вы находитесь в <span class="header__city-desc-current-title">Санкт-Петербурге</span>
+                            </p>
+                            <div class="header__city-desc-row">
+                                <button class="header__city-desc-btn btn btn_yellow">Да, верно</button>
+                                <div class="select__wrapper header__city-select-desc">
+                                    <select class="select__element" name="city" id="">
+                                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                        <option value="Моска">Моска</option>
+                                        <option value="Казань">Казань</option>
+                                        <option value="Воронеж">Воронеж</option>
+                                    </select>
+                                    <div class="select__content ">
+                                        <span class="select__current header__city-desc-current">
+
+                                            <span class="select__current-text header__city-text-desc">Нет, другой
+                                                город</span>
+                                            <svg class="header__city-icon-dsec">
+                                                <use xlink:href="./img/sprite/sprite.svg#angle-down"></use>
+                                            </svg>
+                                    </div>
+                                    </span>
+                                    <ul class="select__list header__select-list-desc">
+                                        <li class="select__item header__select-item">Санкт-Петербург</li>
+                                        <li class="select__item header__select-item selected">Моска</li>
+                                        <li class="select__item header__select-item">Казань</li>
+                                        <li class="select__item header__select-item">Воронеж</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__city header__city_mob">
+                    <div class="select__wrapper header__city-select">
+                        <select class="select__element" name="city" id="">
+                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                            <option value="Моска">Моска</option>
+                            <option value="Казань">Казань</option>
+                            <option value="Воронеж">Воронеж</option>
+                        </select>
+                        <div class="select__content ">
+                            <span class="select__current">
+                                <svg class="header__city-icon">
+                                    <use xlink:href="./img/sprite/sprite.svg#plane"></use>
+                                </svg>
+                                <span class="select__current-text header__city-text">Санкт-Петербург</span>
+                        </div>
+                        </span>
+                        <ul class="select__list header__select-list">
+                            <li class="select__item header__select-item">Санкт-Петербург</li>
+                            <li class="select__item header__select-item">Моска</li>
+                            <li class="select__item header__select-item">Казань</li>
+                            <li class="select__item header__select-item">Воронеж</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="/" class="header__main">
+                    <picture>
+                        <source srcset="./img/icons/logo_mobile.svg" media="(max-width: 1400px)">
+                        <img src="./img/icons/HK-logo.svg" alt="" class="header__logo">
+                    </picture>
+
+                </a>
+                <div class="header__right">
+                    <div class="header__info">
+                        <p class="header__work-time">с 9 до 22 без выходных</p>
+                        <a href="tel:+78126777585" class="header__phone">+7 (812) 677 75 85</a>
+                    </div>
+                    <button class="header__btn btn btn_yellow popup-open" data-target="consult">
+                        Консультация дизайнера
+                    </button>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item header__nav-item_with-child">
+                        <div class="header__nav-link-container">
+                            <a href="./kitchen-catalog.html" class="header__nav-link">
+                                Кухни
+                            </a>
+                            <div class="header__dropdown-open-mobile">
+                                <span class="header__dropdown-open-mobile-line"></span>
+                                <span class="header__dropdown-open-mobile-line"></span>
+                            </div>
+                        </div>
+                        <div class="header__dropdown-container">
+                            <ul class="header__dropdown">
+                                <li class="header__dropdown-item header__dropdown-item_desk">
+                                    <a href="./kitchen-catalog.html"
+                                        class="header__dropdown-link header__dropdown-link">
+                                        <img src="./img/icons/HK-logo_1-6.svg" alt="" class="header__dropdown-icon">
+                                        <span><b>Все кухни</b></span>
+                                    </a>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="./kitchen-catalog.html" class="header__dropdown-link">
+                                        <img src="./img/icons/HK-logo_1-2.svg" alt="" class="header__dropdown-icon">
+                                        <span>Прямые кухни</span>
+                                    </a>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="./kitchen-catalog.html" class="header__dropdown-link">
+                                        <img src="./img/icons/HK-logo_1-3.svg" alt="" class="header__dropdown-icon">
+                                        <span>Угловые кухни</span>
+                                    </a>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="./kitchen-catalog.html" class="header__dropdown-link">
+                                        <img src="./img/icons/HK-logo_1-4.svg" alt="" class="header__dropdown-icon">
+                                        <span>Маленькие кухни</span>
+                                    </a>
+                                </li>
+
+                                <li class="header__dropdown-item">
+                                    <a href="./kitchen-catalog.html" class="header__dropdown-link">
+                                        <img src="./img/icons/HK-logo_1-5.svg" alt="" class="header__dropdown-icon">
+                                        <span>Кухни с барной стойкой</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="./closets-catalog.html" class="header__nav-link">Шкафы</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item_with-child">
+                        <div class="header__nav-link-container">
+                            <a href="./technique-catalog.html" class="header__nav-link">Техника</a>
+                            <div class="header__dropdown-open-mobile">
+                                <span class="header__dropdown-open-mobile-line"></span>
+                                <span class="header__dropdown-open-mobile-line"></span>
+                            </div>
+                        </div>
+                        <div class="header__dropdown-container">
+                            <ul class="header__dropdown header__dropdown_without-image">
+                                <li class="header__dropdown-item">
+                                    <a href="./technique-catalog.html" class="header__dropdown-link">
+                                        <span>Варочные панели</span>
+                                    </a>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="./technique-catalog.html" class="header__dropdown-link">
+                                        <span>Духовые шкафы</span>
+                                    </a>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="./technique-catalog.html" class="header__dropdown-link">
+                                        <span>Холодильники</span>
+                                    </a>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="./technique-catalog.html" class="header__dropdown-link">
+                                        <span>Посудомоечные машины</span>
+                                    </a>
+                                </li>
+
+                                <li class="header__dropdown-item">
+                                    <a href="./technique-catalog.html" class="header__dropdown-link">
+                                        <span>Вытяжки</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="./sinks.html" class="header__nav-link">Мойки</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="./production.html" class="header__nav-link">Материалы</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="./workflow.html" class="header__nav-link">Процесс работы</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="./reviews.html" class="header__nav-link">Отзывы</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="./contacts.html" class="header__nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <body>

@@ -1,0 +1,25 @@
+.workflow-steps {
+  padding-top: 70px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 47.25px;
+    line-height: 57px;
+  }
+
+  &__main {
+    margin-top: 70px;
+  }
+  @media(max-width:800px){
+    &__main{
+      margin-top: 0px;
+    }
+    &__header{
+      margin-bottom: 23px;
+    }
+    &__title{
+      font-size: 26px;
+      line-height: 31px;
+    }
+  }
+}

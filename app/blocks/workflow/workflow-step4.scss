@@ -1,0 +1,198 @@
+.workflow-step4{
+    background-color: #F7F7F7;
+    padding-top: 79px;
+    padding-bottom: 293px;
+    max-width: 100vw;
+    overflow: hidden;
+    &__title{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 31.5px;
+        line-height: 38px;
+
+        color: #2E3831;
+    }
+    &__text{
+        max-width: 620px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 30px;
+        color: #2E3831;
+
+    }
+    &__list{
+        display: grid;
+        row-gap: 40px;
+        padding-top: 50px;
+    }
+    &__item{
+        display: grid;
+        grid-template-columns: 69px auto;
+
+    }
+    &__num{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 30px;
+        color: #FECF28;
+    }
+    &__item-text{
+        font-size: 15px;
+        line-height: 30px;
+        color: #8E8E8E;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: minmax(100px, 736px) 715px;
+        column-gap: 128px;
+        position: relative;
+    }
+    &__slider{
+        width: 715px;
+        overflow: visible;
+        margin-left: 0px;
+    }
+    &__foto-item{
+        width: 657px;
+        height: 466px;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__slider-container{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100vw;
+        overflow: hidden;
+    }
+    &__slider-wrapper{
+        position: relative;
+    }
+    &__slider-next-desc{
+        position: absolute;
+        width: 100vw;
+        left: calc(50% - 210px);
+        top: 0;
+        height: 466px;
+        transform: translateX(50%);
+        z-index: 1;
+        cursor: pointer;
+        
+    }
+    &__slider-next-icon{
+        margin-top: 221px;
+        height: 25px;
+        width: 16px;
+        margin-left: 159px;
+    }
+    &__next-icon-wrapper{
+        width: 210px;
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%), linear-gradient(0deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
+        height: 100%;
+        transition: .3s;
+    }
+
+    &__slider-next-mob{
+        display: none;
+    }
+
+    @media(max-width:1440px){
+        &__container{
+            width: 1300px;
+        }
+        &__wrapper{
+            column-gap: 60px;
+            grid-template-columns: minmax(350px, 553px)  minmax(600px, 747px);
+        }
+        &__foto-item{
+            width: 573px;
+            height: 471px;
+        }
+        &__slider-next-desc{
+            height: 471px;
+        }
+        &__list{
+            row-gap: 30px;
+        }
+    }
+    @media(max-width:1000px){
+        padding-bottom: 241px;
+        padding-top: 69px;
+        &__wrapper{
+            grid-template-columns: 100%;
+            row-gap: 70px;
+        }
+        &__slider-container{
+            position: relative;
+        }
+        &__slider-next-desc{
+            bottom: 0px;
+            top: auto;
+        }
+        &__list{
+            padding-left: 50px;
+        }
+        &__title{
+            margin-bottom: 16px;
+            font-size: 26px;
+            line-height: 30px;
+        }
+        &__text{
+            margin-bottom: 27px;
+        }
+        @media(max-width:768px){
+            padding-top: 42px;
+            padding-bottom: 189px;
+            &__list{
+                padding-left: 0px;
+                row-gap: 15px;
+            }
+            &__foto-item{
+                width: 334px;
+                height: 275px;
+            }
+            &__slider-next-desc{
+                height: 275px;
+                left: calc(50% - 71px);
+            }
+            &__slider-next-icon{
+                margin-top: 125px;
+                margin-left: 40px;
+            }
+            &__next-icon-wrapper{
+                width: 71px;
+            }
+            &__slider-wrapper{
+                margin-left: -20px;
+            }
+            &__wrapper{
+                row-gap: 15px;
+            }
+            &__item{
+                grid-template-columns: 49px auto;
+            }
+        }
+    }
+    @media(max-width:430px){
+        &__slider-wrapper{
+            margin-left: -10px;
+        }
+    }
+    @media(max-width:400px){
+        &__foto-item{
+            width: 290px;
+            height: 190px;
+        }
+        &__slider-next-desc{
+            height: 190px;
+            left: calc(50% - 71px);
+        }
+        &__slider-next-icon{
+            margin-top: 80px;
+        }
+    }
+}

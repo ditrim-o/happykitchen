@@ -1,0 +1,66 @@
+<form action="" class="filter container">
+    <ul class="filter__radios">
+        <li class="filter__radio-item">
+            <input type="radio" name="kitchen-type" id="all" class="filter__radio-btn" checked>
+            <label for="all" class="filter__radio-label">Все планировки</label>
+        </li>
+        <li class="filter__radio-item">
+            <input type="radio" name="kitchen-type" id="corner" class="filter__radio-btn">
+            <label for="corner" class="filter__radio-label">@@name_1</label>
+        </li>
+        <li class="filter__radio-item">
+            <input type="radio" name="kitchen-type" id="straight" class="filter__radio-btn">
+            <label for="straight" class="filter__radio-label">@@name_2</label>
+        </li>
+        <li class="filter__radio-item">
+            <input type="radio" name="kitchen-type" id="small" class="filter__radio-btn">
+            <label for="small" class="filter__radio-label">@@name_3</label>
+        </li>
+    </ul>
+    <div class="select__wrapper filter__mob">
+        <select class="select__element" name="kitchens-form">
+            <option value="Все планировки">Все планировки</option>
+            <option value=@@name_1>@@name_1</option>
+            <option value=@@name_2>@@name_2</option>
+            <option value=@@name_3>@@name_3</option>
+        </select>
+        <div class="select__content">
+            <span class="select__current filter__mob-current">
+                <span class="select__current-text filter__mob-text">Все планировки</span>
+                <svg class="filter__mob-icon">
+                    <use xlink:href="./img/sprite/sprite.svg#angle-down-black"></use>
+                </svg>
+            </span>
+        </div>
+
+        <ul class="select__list filter__mob-select-list">
+            <li class="select__item filter__mob-select-item">Все планировки</li>
+            <li class="select__item filter__mob-select-item">@@name_1</li>
+            <li class="select__item filter__mob-select-item">@@name_2</li>
+            <li class="select__item filter__mob-select-item">@@name_3</li>
+        </ul>
+    </div>
+
+    <div class="select__wrapper filter__sort">
+        <select class="select__element" name="kitchens-sort" id="">
+            <option value="По популярности">По популярности</option>
+            <option value="Сначала дешевле">Сначала дешевле</option>
+            <option value="Сначала дороже">Сначала дороже</option>
+
+        </select>
+        <div class="select__content">
+            <span class="select__curren filter__sort-current">
+                <span class="select__current-text filter__sort-text">По популярности</span>
+                <svg class="filter__sort-icon">
+                    <use xlink:href="./img/sprite/sprite.svg#angle-down"></use>
+                </svg>
+            </span>
+        </div>
+
+        <ul class="select__list filter__sort-select-list">
+            <li class="select__item filter__sort-select-item">По популярности</li>
+            <li class="select__item filter__sort-select-item">Сначала дешевле</li>
+            <li class="select__item filter__sort-select-item">Сначала дороже</li>
+        </ul>
+    </div>
+</form>

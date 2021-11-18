@@ -1,0 +1,224 @@
+.ui-container{
+    margin: 50px auto;
+    max-width: 1200px;
+    background-color: rgb(241, 239, 239);
+    padding: 40px;
+}
+.btn{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn_yellow{
+    background-color: #FECF28;
+    border: 2px solid transparent;
+    color:#2E3831;
+}
+.btn_yellow:hover{
+    border: 2px solid #FECF28;
+    background-color: #FFE074;
+}
+.btn_white{
+    border:2px solid #FECF28;
+    color:#2E3831;
+    background-color: transparent;
+}
+.btn_white:hover{
+    border: 2px solid transparent;
+    background-color: #FECF28;
+}
+.btn_blue{
+    background-color: #0498CE;
+    color:#2E3831;
+    color:white;
+
+}
+.btn_blue:hover{
+    background-color: #00BBFF;
+}
+.container{
+    width: 1620px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.select__element{
+    display: none;
+}
+.select__list{
+    display: none;
+}
+.select__wrapper{
+    position: relative;
+}
+.select__wrapper.active .select__list{
+    display: block;
+}
+.select__current{
+    cursor: pointer;
+}
+.select__item{
+    cursor: pointer;
+}
+.select__list{
+    position: absolute;
+    top:100%;
+    left: 0px;
+}
+.input{
+    height: 54px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color:#2E3831;
+    font-weight: 400;
+    padding-left: 24px;
+    background: #FFFFFF;
+    border: 1px solid #C8C7C7;
+    box-sizing: border-box;
+    border-radius: 2px;
+    position: relative;
+    width: 100%;
+ &::placeholder{
+     color:#8E8E8E;
+ }
+}
+.input.error{
+    border: 1px solid #F79E1B;
+}
+.field{
+    position: relative;
+}
+.error-text{
+    display: none;
+}
+.input.error+.error-text{
+
+    position: absolute;
+    right: 0px;
+    bottom: 61px;
+    color:#F79E1B;
+    font-size: 12px;
+    display: block;
+
+}
+.textarea{
+    padding-top: 20px;
+    font-size: 14px;
+    color:#2E3831;
+    font-weight: 400;
+    padding-left: 24px;
+    padding-right: 30px;
+    resize: none;
+    border: 1px solid #C8C7C7;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 100%;
+    font-family: 'Inter';
+    &::placeholder{
+        color:#8E8E8E;
+        font-family: 'Inter';
+    }
+}
+.textarea:focus, .input:focus{
+    border: 1px solid #C8C7C7;
+    outline: none;
+}
+.input-label{
+    font-size: 14px;
+    line-height: 17px;
+    color: #2E3831;
+    margin-bottom: 7px;
+    display: block;
+}
+@media(max-width:430px){
+    .container{
+        padding: 0 10px;
+    }
+}
+
+// Preloader
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    &._inactive {
+        display: none;
+    }
+
+    &__item {
+        display: inline-block;
+        position: relative;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        border-top-color: #0498ce;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            border-top-color: #e24242;
+            -webkit-animation: spin 3s linear infinite;
+            animation: spin 3s linear infinite;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            border-top-color: #fecf28;
+            -webkit-animation: spin 1.5s linear infinite;
+            animation: spin 1.5s linear infinite;
+        }
+    }
+}
+// Preloader keyframes
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+//END  Preloader keyframes

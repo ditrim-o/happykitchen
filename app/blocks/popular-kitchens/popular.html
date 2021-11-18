@@ -1,0 +1,39 @@
+<section class="popular">
+    <div class="container popular__container">
+        <div class="popular__header-wrapper">
+            <h3 class="popular__header">Популярные кухни</h3>
+            <a href="#" class="popular__header-link">
+                <span>Все кухни</span>
+                <svg class="popular__header-link-icon">
+                    <use xlink:href="./img/sprite/sprite.svg#arr-blue"></use>
+                </svg>
+            </a>
+
+        </div>
+
+        <ul class="popular__list">
+            @@include("../kitchen/kitchen-small.html",{
+            img1:'https://happykitchen.ru/assets/components/phpthumbof/cache/a6add8299c1533a0ae3c38da75f0c8cc.1e717a2e9f0d91e06603a68b06337179.jpg',
+            img2:'https://happykitchen.ru/assets/components/phpthumbof/cache/e5eb046262cdee905d71f9276fa50da7.1e717a2e9f0d91e06603a68b06337179.jpg',
+            img3:'https://happykitchen.ru/assets/components/phpthumbof/cache/1c9eef9fae305cd75626faceff427989.1e717a2e9f0d91e06603a68b06337179.jpg',
+            title:'Ферроль',
+            price:'48 700 ₽'
+            })
+            @@include("../kitchen/kitchen-small.html",{
+            img1:'https://happykitchen.ru/assets/components/phpthumbof/cache/f9049f9a973a34f0a3c45a0ea099d1f7.1e717a2e9f0d91e06603a68b06337179.jpg',
+            img2:'https://happykitchen.ru/assets/components/phpthumbof/cache/fc8f945fac2c8d052f1eda39903ae4a2.1e717a2e9f0d91e06603a68b06337179.jpg',
+            img3:'https://happykitchen.ru/assets/components/phpthumbof/cache/28136581f1fb8d3ac8d431b191da6324.1e717a2e9f0d91e06603a68b06337179.jpg',
+            title:'Арриба',
+            price:'54 650 ₽'
+            })
+        </ul>
+        <div class="popular__btn-wrapper">
+            <a href="#" class="popular__btn btn btn_blue"><span>Все кухни</span>
+                <svg class="kitchen-small__arrow">
+                    <use xlink:href="./img/sprite/sprite.svg#arr-white"></use>
+                </svg></a>
+        </div>
+
+    </div>
+
+</section>

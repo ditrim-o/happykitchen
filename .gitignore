@@ -1,0 +1,7 @@
+package-lock.json
+/node_modules/*
+/dist/*
+/app/img/sprite/*
+/app/css/main.css
+/app/*.html
+/app/js/libs.min.js

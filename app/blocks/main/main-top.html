@@ -1,0 +1,52 @@
+<section class="main-cat">
+    <div class="container main-cat__container">
+        <div class="main-cat__wrapper">
+            <div class="main-cat__no-scroll-js">
+                <div class="main-cat__caption">
+                    <h1 class="main-cat__header">
+                        <span class="main-cat__yellow">Просто и быстро.</span><br>
+                        Новая кухня<br>
+                        по вашим размерам
+                    </h1>
+                    <p class="main-cat__discount">В этом месяце скидки<br> на все кухни
+                        <span class="main-cat__discount-value">-70%</span>
+                    </p>
+                </div>
+
+            </div>
+            <ul class="main-cat__list">
+                @@include("main-card-category.html",{
+                img: './img/cat-img.jpg',
+                text: 'Угловые',
+                cat: 'Кухни'
+
+                })
+                @@include("main-card-category.html",{
+                img: './img/cat-img2.jpg',
+                text: 'Прямые',
+                cat: 'Кухни'
+                })
+                @@include("main-card-category.html",{
+                img: './img/cat-img3.jpg',
+                text: 'Маленькие',
+                cat: 'Кухни'
+                })
+                @@include("main-card-category.html",{
+                img: './img/cat-img4.jpg',
+                text: 'С барной стойкой',
+                cat: 'Кухни'
+                })
+                @@include("main-card-category.html",{
+                img: './img/cat-img5.jpg',
+                text: 'Шкафы',
+                cat: ''
+                })
+                @@include("main-card-category.html",{
+                img: './img/cat-img6.jpg',
+                text: 'Мойки',
+                cat: ''
+                })
+            </ul>
+        </div>
+    </div>
+</section>

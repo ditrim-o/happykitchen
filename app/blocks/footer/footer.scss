@@ -1,0 +1,190 @@
+.footer{
+    &__top{
+        display: grid;
+        grid-template-columns: 1fr 372px 1fr;
+        column-gap: 274px;
+        justify-content: center;
+        padding: 53px 0 32px;
+    } 
+    &__menu{
+        display: grid;
+        row-gap: 18px;
+        justify-content: flex-end;
+    }
+    &__menu-item{
+        text-align: right;
+    }
+    &__menu-link{
+        font-size: 16px;
+        font-weight: 400;
+        color:black;
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &__pay-btn{
+        height: 60px;
+        width: 275px;
+    }
+    &__phone-link{
+        font-weight: 500;
+        font-size: 26px;
+        text-align: center;
+        color:black;
+        margin-bottom: 46px;
+    }
+    &__phone-text{
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 35px;
+        color:black;
+    }
+    &__logo{
+        height: 32px;
+    }
+    &__logo-link{
+        margin-bottom: 18px;
+    }
+    &__buttons{
+        max-width: 276px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__buttons-text{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        margin-bottom: 19px;
+    }
+    &__btn-designer{
+        height: 60px;
+        margin-bottom: 14px;
+    }
+    &__btn-callback{
+        height: 60px;
+    }
+    &__bottom{
+        background-color: #2E3831;
+    }
+    &__bottom-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        height: 112px;
+    }
+    &__social{
+        display: grid;
+        grid-template-columns: 34px 41px;
+        column-gap: 47px;
+    }
+    &__social-icon{
+        max-height: 31px;
+    max-width: 100%;
+    }
+    &__policy{
+        color:#8E8E8E;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: underline;
+        text-align: center;
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: 54px 123px 53px;
+        column-gap: 30px;
+        justify-self: flex-end;
+    }
+    &__social-icon{
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
+@media(max-width:1440px){
+    .footer{
+        &__bottom-container{
+            width: 1280px;
+            max-width: 100%;
+        }
+        &__top{
+            column-gap:112px;
+            padding: 33px 0 22px;
+        }
+        &__menu{
+            padding-right: 100px;
+        }
+    }
+}
+@media(max-width:1100px){
+    .footer{
+        &__top{
+            grid-template-columns: 1fr 372px auto;
+            column-gap:50px;
+            padding: 46px 0 35px;
+        }
+        &__menu{
+            padding-right: 0;
+        }
+    }
+}
+@media(max-width:930px){
+    .footer{
+        &__top{
+            grid-template-columns: auto;
+            max-width: 400px;
+            padding: 56px 0 20px;
+            margin: 0 auto;
+        }
+        &__menu{
+            grid-template-columns: 1fr 1fr;
+            row-gap: 28px;
+            margin-bottom: 55px;
+        }
+        &__menu-item{
+            text-align: left;
+        }
+        &__info{
+            grid-row: 3/4;
+        }
+        &__buttons{
+            grid-row: 2/3;
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 37px;
+        }
+        &__pay-btn{
+            width: 100%;
+        }
+        &__phone-link{
+            margin-bottom: 26px;
+        }
+        &__bottom-container{
+            grid-template-columns: 1fr;
+            padding-top: 42px;
+            padding-bottom: 30px;
+            height: auto;
+        }
+        &__social{
+            justify-self: center;
+            margin-bottom: 20px;
+        }
+        &__policy{
+            margin-bottom: 37px;
+        }
+        &__cards{
+            justify-self: center;
+            column-gap: 25px;
+        }
+    }
+}
+@media(max-width:500px){
+    .footer__phone-text{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+}
